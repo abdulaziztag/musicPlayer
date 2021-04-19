@@ -132,5 +132,22 @@ body {
   border-radius: 5px;
   height: 100%;
   width: 50%;
+  position: relative;
+  overflow: visible;
   transition: width .1s linear;
+}
+
+.progress-container:hover .dot{
+  transform: scale(10);
+}
+
+.dot {
+  border-radius: 50%;
+  background-color: #fe8daa;
+  width: 1px;
+  top: 50%;
+  transition: .1s all;
+  transform-origin: center;
+  height: 1px;
+  position: absolute;
 }

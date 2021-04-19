@@ -7,6 +7,7 @@ const progress = document.querySelector('.progress')
 const progressContainer = document.querySelector('.progress-container')
 const title = document.querySelector('#title')
 const cover = document.querySelector('#cover')
+const dot = document.querySelector('.dot')
 
 const songs = ['hey', 'summer', 'ukulele']
 
@@ -64,6 +65,7 @@ function updateProgress(event) {
   const {duration, currentTime} = event.srcElement
   const progressPercent = (currentTime / duration) * 100
   progress.style.width = `${progressPercent}%`
+  dot.style.right = `0`
 }
 
 function setProgress (event) {
